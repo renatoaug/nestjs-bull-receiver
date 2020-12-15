@@ -1,7 +1,7 @@
 import { Processor, Process } from '@nestjs/bull'
 import { Logger } from '@nestjs/common'
 import { Job } from 'bull'
-import { RouterEvent } from '@renato.ames/nestjs-bull-emitter'
+import { RouterEvent } from '@renatoaug/nestjs-bull-emitter'
 
 @Processor('content')
 export class ContentProcessor {
