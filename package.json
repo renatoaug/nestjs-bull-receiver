@@ -1,15 +1,25 @@
 {
-  "name": "nestjs-bull-receiver",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@renato.ames/nestjs-bull-receiver",
+  "version": "0.0.3",
+  "description": "Receive events using bull",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatoaug/nestjs-bull-receiver"
+  },
   "author": "Renato Augusto",
-  "private": true,
   "license": "UNLICENSED",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "start": "node ./dist/nestjs-bull-receiver/src/main.js",
+    "start": "nest start",
     "start:dev": "nest start --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
@@ -20,7 +30,7 @@
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
-    "@renato.ames/nestjs-bull-emitter": "^0.3.1",
+    "@renato.ames/nestjs-bull-emitter": "^0.3.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4"
@@ -48,6 +58,9 @@
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "jest": {
     "moduleFileExtensions": [

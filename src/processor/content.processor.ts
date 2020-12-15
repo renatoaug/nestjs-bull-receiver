@@ -8,6 +8,6 @@ export class ContentProcessor {
   @RouterEvent('content', 'updated')
   @Process('updated')
   async onContentUpdated(job: Job): Promise<void> {
-    Logger.log(`Job data: ${job.data}`, ContentProcessor.name)
+    Logger.log(`Received event: ${JSON.stringify(job.data)}`, ContentProcessor.name)
   }
 }

@@ -14,10 +14,6 @@ import { ContentProcessor } from './processor'
         password: process.env.REDIS_PASSWORD
       },
     }),
-    BullModule.registerQueueAsync({
-      name: 'content',
-      imports: [],
-    }),
   ],
   providers: [ContentProcessor],
 })
