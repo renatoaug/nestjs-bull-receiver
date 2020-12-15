@@ -21,4 +21,4 @@ import { ContentProcessor } from './processor'
   ],
   providers: [ContentProcessor],
 })
-export class AppModule {}
+export class ReceiverModule {}
