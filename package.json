@@ -1,6 +1,6 @@
 {
   "name": "@renatoaug/nestjs-bull-receiver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Receive events using bull",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
-    "@renatoaug/nestjs-bull-emitter": "^0.4.0",
+    "@renatoaug/nestjs-bull-emitter": "^0.4.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4"
